@@ -1,0 +1,72 @@
+
+
+
+body{
+  background: rgba(178,248,236,0.88);
+}
+
+.headerimg{
+  padding-left:0px;
+  padding-bottom:100px;
+  box-shadow: 0 2px 25px 0 rgba(0,0,0,0.50), inset 40px 23px 27px 30px rgba(117,40,40,0.00);
+  background-image: url("./img/emotionheader.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  padding-left: 20px;
+  font-family: TrajanPro3-Bold;
+  font-size: 24px;
+  color: #0F0F0F;
+  text-shadow: 0 2px 11px rgba(255,255,255,0.50);
+}
+
+.container {
+    min-width: 592px;
+    max-width: 800px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-6,.col-sm{
+
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  }
+
+
+@media (min-width: 576px) {
+  .col-sm {
+
+    font-family: American Typewriter, serif;
+    font-size: 14px;
+    color: #0A0A0A;
+    text-align: center;
+    background:#48A9D4;
+    border: 1px solid #979797;
+    margin-right: 25px;
+    margin-bottom: 100px;
+    min-height: 200px;
+    min-width: 120px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
