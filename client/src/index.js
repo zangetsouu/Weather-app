@@ -50,13 +50,17 @@ class MeteoPage extends React.Component {
 
 
   render() {
-
+    const city = this.state.weather.city;
     const weather = this.state.weather.forecast;
     let forecast;
 
     if(weather === 'err'){
       forecast = <div> Unable to get weather data! City not found! </div>
-    } else{
+    }
+    else  if(weather === 'unavailable'){
+      forecast = <div> Weather data unavailable for {city}! </div>
+    }
+    else{
 
       forecast = weather.map(function({code, date, day, high, low, text}){
 
